@@ -7,6 +7,7 @@ then
   echo "Enter Day no. as argument"
 else
   dir="day$@"
+  problem="./$dir/problem.md"
   input="./$dir/input.txt"
   part1="./$dir/part1.py"
   part2="./$dir/part2.py"
@@ -17,7 +18,7 @@ else
     exit 1
   else
     mkdir $dir
-    touch $input $part1 $part2
+    touch $problem $input $part1 $part2
   fi
 
   vi $part1
