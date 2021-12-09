@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 httpie = "*"
+numpy = "*"
 
 [dev-packages]
 
